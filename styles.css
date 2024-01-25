@@ -83,6 +83,7 @@
 }
 
 .card-author>img {
+  filter: grayscale(50%);
   max-inline-size: 2rem;
   aspect-ratio: 1 / 1;
   /* To remove some weird height values from the image */
