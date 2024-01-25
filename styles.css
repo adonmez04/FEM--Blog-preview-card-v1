@@ -1,0 +1,89 @@
+/* section-blog-card */
+.section-blog-card {
+  border-radius: 1.25rem;
+  outline: 1px solid var(--neutral-black, #111);
+  /* I used outline property instead of the border 
+  because I want to set exact the same width and height value for the image. 
+  The outline property uses the margin area of the element
+  and it doesn't any affect to the border-box model.*/
+
+  background: var(--neutral-white, #FFF);
+  box-shadow: 8px 8px 0px 0px #000;
+}
+
+/* card-image */
+.card-image>img {
+  border-radius: 0.625rem;
+
+  @media (width <=375px) {
+    aspect-ratio: 279 / 200;
+    /* To set the correct values for the images */
+  }
+}
+
+/* card-content */
+.card-content>a {
+  color: var(--neutral-black, #111);
+  font-size: 0.875rem;
+  font-weight: 800;
+
+  max-inline-size: 5.125rem;
+  padding-block: 0.25rem;
+
+  border-radius: 0.25rem;
+  background-color: var(--primary, #F4D04E);
+
+  @media (width <=375px) {
+    font-size: 0.75rem;
+  }
+}
+
+.card-content>.published {
+  color: var(--neutral-black, #111);
+  font-size: 0.875rem;
+
+  @media (width <=375px) {
+    font-size: 0.75rem;
+  }
+}
+
+.card-content>h3 {
+  color: var(--neutral-black, #111);
+  font-size: 1.5rem;
+  font-weight: 800;
+
+  @media (width <=375px) {
+    font-size: 1.25rem;
+  }
+}
+
+.card-content>h3:hover {
+  color: var(--primary);
+}
+
+.card-content>.description {
+  color: var(--neutral-gray, #7F7F7F);
+
+  @media (width <=375px) {
+    font-size: 0.875rem;
+  }
+}
+
+/* card-author */
+.card-author {
+  display: flex;
+  align-items: center;
+  column-gap: 0.75rem;
+}
+
+.card-author>p {
+  color: var(--neutral-black, #111);
+  font-size: 0.875rem;
+  font-weight: 800;
+}
+
+.card-author>img {
+  max-inline-size: 2rem;
+  aspect-ratio: 1 / 1;
+  /* To remove some weird height values from the image */
+}

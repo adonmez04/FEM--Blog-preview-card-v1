@@ -1,0 +1,16 @@
+.section-blog-card {
+  /* margin-block-start */
+  --stack: 1.5rem;
+  max-inline-size: 24rem;
+  padding: 1.5rem;
+
+  @media (width <=375px) {
+    /* 327px */
+    max-inline-size: 20.4375rem;
+  }
+}
+
+.card-content>*+* {
+  /* margin-block-start */
+  --stack: 0.75rem;
+}

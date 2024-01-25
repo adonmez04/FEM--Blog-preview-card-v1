@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* The layout */
+body {
+  block-size: 100svb;
+  display: grid;
+  place-content: center;
+  padding-inline: 1.5rem;
+}
+
+/* The theme */
+body {
+  font: normal 500 1rem/1.5 "Figtree", "Arial", sans-serif;
+  /* font-style font-weight font-size/line-height font-family */
+
+  background-color: var(--primary, #F4D04E);
+}

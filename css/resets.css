@@ -1,0 +1,12 @@
+/* Links */
+a {
+  display: block;
+  text-decoration: none;
+  color: unset;
+  text-align: center;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
